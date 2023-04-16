@@ -15,4 +15,7 @@ void _puts_recursion(char *s)
 	else
 		_putchar('\n');
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84d14b90fe052f3e9359a72c225d8246937d0f61

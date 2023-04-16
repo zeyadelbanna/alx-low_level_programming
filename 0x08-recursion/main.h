@@ -12,4 +12,7 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 #endif
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84d14b90fe052f3e9359a72c225d8246937d0f61

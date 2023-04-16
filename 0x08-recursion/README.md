@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## C - Recursion
 
 #### [0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget](0-puts_recursion.c)
@@ -61,3 +62,6 @@ Write a function that compares two strings and returns 1 if the strings can be c
 - s2 can contain the special character *.
 - The special char * can replace any string (including an empty string) 
 
+=======
+0x08. C - Recursion
+>>>>>>> 84d14b90fe052f3e9359a72c225d8246937d0f61
