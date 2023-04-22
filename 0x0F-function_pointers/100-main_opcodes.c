@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 /**
 * main - prints the opcodes of its own main function
 * @argc: number of arguments passed to the function
