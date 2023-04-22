@@ -25,12 +25,12 @@ int main(int argc, char **argv)
        printf("Error\n");
        exit(1);
    }
-   x = atoi(argv[1]);
-   if (x < 0)
+   a = atoi(argv[1]);
+   if (a < 0)
    {
        printf("Error\n");
        exit(2);
    }
-   print_opcodes((char *)&main, x);
+   print_opcodes((char *)&main, a);
    return (0);
 }
