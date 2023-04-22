@@ -48,6 +48,7 @@ int main(int argc, char **argv)
        printf("Error\n");
        exit(2);
    }
-   print_opcodes((char *)&main, n);
+   while (n--)
+            printf("%02hh%s", *p++, b ? " " : "\n");
    return (0);
 }
