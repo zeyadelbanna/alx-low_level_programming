@@ -1,28 +1,4 @@
-#include <stdlib.h>
 #include <stdio.h>
-
-
-/**
-* print_opcodes - print the opcodes of this program
-* @a: address of the main function
-* @n: number of bytes to print
-*
-* Return: void
-*/
-void print_opcodes(char *a, int n)
-{
-   int i;
-
-
-   for (i = 0; i < n; i++)
-   {
-       printf("%.2hhx", a[i]);
-       if (i != n - 1)
-           printf(" ");
-   }
-   printf("\n");
-}
-
 
 /**
 * main - prints the opcodes of its own main function
@@ -31,10 +7,10 @@ void print_opcodes(char *a, int n)
 *
 * Return: always O
 */
-int main(int argc, char **argv)
-{
-   int n;
 
+int main(int argc, char *argv[])
+{
+  unsigned char *f;
 
    if (argc != 2)
    {
@@ -47,7 +23,14 @@ int main(int argc, char **argv)
        printf("Error\n");
        exit(2);
    }
-   print_opcodes((char *)&main, n);
+   f = unsigned char *) main;
+   for (int i = 0; i < n; i++)
+   {
+       printf("%02x", *(f+i));
+       if (i != n - 1)
+           printf(" ");
+   }
+   printf("\n");
    
    return (0);
 }
